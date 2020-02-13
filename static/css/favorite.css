@@ -1,0 +1,166 @@
+content > a,a:link,a:visited{
+    color: black;
+    text-decoration: none !important;
+}
+content > a:hover{
+    color: black !important;
+    text-decoration: none;
+}
+
+.Splitter{
+    min-height: 50px;
+}
+
+.favorite {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 8%;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    left: 0;
+    width: 30%;
+    min-width: 250px;
+    background: gray;
+    color: black;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+#sidebarCollapse {
+    display: none;
+}
+
+.row-margin{
+    margin: 0px 5px 5px 0px;
+}
+
+.card-size{
+    width: 300px;
+    height:25%;
+    margin:  15px 5px 5px 15px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+#dismiss {
+    visibility:hidden;
+}
+
+li {
+    margin: auto 10px;
+}
+
+#delete-photo {
+    vertical-align: top;
+}
+
+.field-content {
+    display:inline-block;
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+}
+
+.square {
+    width:100%;
+}
+
+.wide-rectangle {
+    width:auto;
+    height:100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.high-rectangle {
+    width:100%;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.picture-wall-photo {
+    width: fit-content;
+    float: left;
+    margin: 10px;
+}
+.picture-wall-photo > p {
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 575px){ 
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        top: 20px;
+        left: -260px;
+        height: 100vh;
+        z-index: 999;
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    #sidebar.active {
+        left: 0;
+    }
+    
+    #sidebarCollapse {
+        display: block;
+    }
+    #dismiss {
+        visibility: visible;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    #dismiss:hover {
+        background: #fff;
+        color: #7386D5;
+    }
+
+    .card-size {
+        width: 90%;
+    }
+
+    .all-picture {
+        max-height: 80%;
+        max-width: 80%;
+        width: 220px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
