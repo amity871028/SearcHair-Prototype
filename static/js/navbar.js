@@ -25,13 +25,13 @@ var header = '<!--Navbar--> \
             <a class="nav-link" href="recommend-product.html">推薦商品</a> \
         </li> \
         <li class="nav-item"> \
-            <a class="nav-link" href="#">Hair Match</a> \
+            <a class="nav-link" href="hair-match.html">Hair Match</a> \
         </li> \
         <li class="nav-item"> \
             <a class="nav-link" href="#">美髮地圖</a> \
         </li> \
         <li class="nav-item"> \
-            <a class="nav-link" href="#">聊天室</a> \
+            <a class="nav-link" href="chatroom.html">聊天室</a> \
         </li> \
     </ul> \
      \

@@ -1,0 +1,117 @@
+content > a,a:link,a:visited{
+    color: black;
+    text-decoration: none !important;
+}
+content > a:hover{
+    color: black !important;
+    text-decoration: none;
+}
+
+.Splitter{
+    min-height: 9vh;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    left: 0;
+    width: 30%;
+    min-width: 250px;
+    background: gray;
+    color: black;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+#sidebarCollapse {
+    display: none;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 91vh;
+    transition: all 0.3s;
+}
+
+#dismiss {
+    visibility:hidden;
+}
+
+#chatbox {
+    width: 100%;
+    height: 69vh;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#send-box {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#send-box a i{
+    font-size: 24px;
+}
+
+
+::placeholder {
+    text-align: end;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px){ 
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        top: 8vh;
+        left: -260px;
+        height: 100vh;
+        z-index: 999;
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    #sidebar.active {
+        left: 0;
+    }
+    
+    #sidebarCollapse {
+        display: block;
+    }
+    #dismiss {
+        visibility: visible;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    #dismiss:hover {
+        background: #fff;
+        color: #7386D5;
+    }
+
+    #chatbox {
+        height: 70vh;
+    }
+
+}
