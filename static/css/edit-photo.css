@@ -1,5 +1,5 @@
 content > a,a:link,a:visited{
-    color: black;
+    color: black !important;
     text-decoration: none !important;
 }
 content > a:hover{
@@ -23,14 +23,12 @@ content > a:hover{
 #sidebar {
     position: absolute;
     right: 0;
-    width: 320px;
-    height: 100%;
-    min-width: 250px;
-    background: gray;
+    width: 310px;
+    height: 97%;
+    background: #beebe9;
     color: black;
-    transition: all 0.3s;
     padding: 10px;
-    text-align: center;
+    box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 #sidebarCollapse {
@@ -39,12 +37,13 @@ content > a:hover{
 }
 
 #hairstyle, #hair-color, #face-match {
-    height: 490px;
+    /* height: 480px; */
+    height: 76vh;
     overflow-y: auto;
 }
 
 #hairstyle img, #face-match img {
-    width: 130px;
+    width: 120px;
     margin: 3px;
 }
 
@@ -126,14 +125,13 @@ h4 {
 
 @media only screen and (min-width: 0px) and (max-width: 575px){ 
     #sidebar {
-        width: 250px;
+        width: 285px;
         position: fixed;
-        left: -260px;
+        left: -305px;
         height: 100vh;
         z-index: 999;
         transition: all 0.3s;
         overflow-y: scroll;
-        background-color: grey;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     }
     
@@ -149,8 +147,8 @@ h4 {
         width: 35px;
         height: 35px;
         position: absolute;
-        top: 67px;
-        right: 0px;
+        top: 24px;
+        right: -5px;
         cursor: pointer;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;

@@ -8,7 +8,7 @@ content > a:hover{
 }
 
 .Splitter{
-    min-height: 9vh;
+    min-height: 56px;
 }
 
 /* ---------------------------------------------------
@@ -21,13 +21,14 @@ content > a:hover{
 }
 
 #sidebar {
+    position: fixed;
     left: 0;
-    width: 30%;
-    min-width: 250px;
-    background: gray;
+    width: 310px;
+    height: -webkit-fill-available;
+    background: #beebe9;
     color: black;
-    transition: all 0.3s;
     padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #sidebarCollapse {
@@ -41,9 +42,9 @@ content > a:hover{
 
 #content {
     width: 100%;
+    margin-left: 310px;
     padding: 20px;
-    min-height: 91vh;
-    transition: all 0.3s;
+    min-height: 100vh;
 }
 
 #dismiss {
@@ -75,8 +76,7 @@ content > a:hover{
 @media only screen and (min-width: 0px) and (max-width: 575px){ 
     #sidebar {
         width: 250px;
-        position: fixed;
-        top: 8vh;
+        top: 56px;
         left: -260px;
         height: 100vh;
         z-index: 999;
@@ -92,12 +92,17 @@ content > a:hover{
     #sidebarCollapse {
         display: block;
     }
+    
+    #content {
+        margin-left: 0;
+    }
+
     #dismiss {
         visibility: visible;
         width: 35px;
         height: 35px;
         position: absolute;
-        top: 60px;
+        top: 43px;
         right: 10px;
         cursor: pointer;
         -webkit-transition: all 0.3s;

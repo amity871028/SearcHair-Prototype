@@ -1,5 +1,5 @@
 var header = '<!--Navbar--> \
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark"> \
+<nav class="navbar navbar-expand-md fixed-top"> \
     <!-- Navbar brand --> \
     <a class="navbar-brand" href="#">SearcHair</a> \
  \
