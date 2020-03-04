@@ -1,9 +1,9 @@
 .Splitter{
-    min-height: 52px;
+    min-height: 50px;
 }
 
 content > a,a:link,a:visited{
-    color: black;
+    color: black !important;
     text-decoration: none !important;
 }
 content > a:hover{
@@ -21,12 +21,14 @@ content > a:hover{
 }
 
 #sidebar {
+    position: fixed;
     left: 0;
-    width: 30%;
-    background: gray;
+    width: 310px;
+    height: -webkit-fill-available;
+    background: #beebe9;
     color: black;
-    transition: all 0.3s;
     padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -44,9 +46,9 @@ content > a:hover{
 
 #content {
     width: 100%;
+    margin-left: 310px;
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
 }
 
 #dismiss {
@@ -59,7 +61,7 @@ content > a:hover{
 }
 
 #content > img {
-    width: 2%;
+    width: 18px;
     vertical-align:middle;
     margin: 5px;
 }
@@ -106,8 +108,7 @@ content > a:hover{
 @media only screen and (min-width: 0px) and (max-width: 575px){ 
     #sidebar {
         width: 250px;
-        position: fixed;
-        top: 20px;
+        top: 56px;
         left: -260px;
         height: 100vh;
         z-index: 999;
@@ -123,6 +124,11 @@ content > a:hover{
     #sidebarCollapse {
         display: block;
     }
+    
+    #content {
+        margin-left: 0;
+    }
+
     #dismiss {
         visibility: visible;
         width: 35px;

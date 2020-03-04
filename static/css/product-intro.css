@@ -1,9 +1,9 @@
 .Splitter{
-    min-height: 52px;
+    min-height: 50px;
 }
 
 content > a,a:link,a:visited{
-    color: black;
+    color: black !important;
     text-decoration: none !important;
 }
 content > a:hover{
@@ -21,12 +21,14 @@ content > a:hover{
 }
 
 #sidebar {
+    position: fixed;
     left: 0;
-    width: 30%;
-    background: gray;
+    width: 310px;
+    height: -webkit-fill-available;
+    background: #beebe9;
     color: black;
-    transition: all 0.3s;
     padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -35,8 +37,8 @@ content > a:hover{
 }
 
 .card-size{
-    width: 90%;
-    margin:  15px 5px 5px 15px;
+    width: 77%;
+    margin: 5px auto;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -44,9 +46,9 @@ content > a:hover{
 
 #content {
     width: 100%;
+    margin-left: 310px;
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
 }
 
 #dismiss {
@@ -75,39 +77,14 @@ content > a:hover{
     margin: 5px;
 }
 
-.to-center {
-    text-align: center;
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;
-    margin: auto;
-}
-
-.to-row {
-    display:flex;
-    flex-direction:row;
-}
-
 .card-img {
     margin: 8px auto;
 }
 
-.bbbb{
-    display:flex; flex-direction:row;
-}
-
-.sss {
-    margin: 5px;
-}
 @media only screen and (min-width: 0px) and (max-width: 575px){ 
     #sidebar {
         width: 250px;
-        position: fixed;
-        top: 20px;
+        top: 56px;
         left: -260px;
         height: 100vh;
         z-index: 999;
@@ -123,12 +100,17 @@ content > a:hover{
     #sidebarCollapse {
         display: block;
     }
+    
+    #content {
+        margin-left: 0;
+    }
+
     #dismiss {
         visibility: visible;
         width: 35px;
         height: 35px;
         position: absolute;
-        top: 60px;
+        top: 43px;
         right: 10px;
         cursor: pointer;
         -webkit-transition: all 0.3s;
@@ -143,14 +125,5 @@ content > a:hover{
 
     .card-size {
         width: 90%;
-    }
-
-    .to-center {
-        margin: 10px;
-        left: -5px;
-    }
-
-    .to-center > span {
-        margin-bottom: 5px;
     }
 }

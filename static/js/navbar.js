@@ -1,7 +1,7 @@
 var header = '<!--Navbar--> \
 <nav class="navbar navbar-expand-md fixed-top"> \
     <!-- Navbar brand --> \
-    <a class="navbar-brand" href="#">SearcHair</a> \
+    <a class="navbar-brand" href="index.html">SearcHair</a> \
  \
     <!-- Collapse button --> \
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" \
@@ -28,7 +28,7 @@ var header = '<!--Navbar--> \
             <a class="nav-link" href="hair-match.html">Hair Match</a> \
         </li> \
         <li class="nav-item"> \
-            <a class="nav-link" href="#">美髮地圖</a> \
+            <a class="nav-link" href="map.html">美髮地圖</a> \
         </li> \
         <li class="nav-item"> \
             <a class="nav-link" href="chatroom.html">聊天室</a> \
