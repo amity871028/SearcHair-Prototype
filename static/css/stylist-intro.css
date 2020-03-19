@@ -81,9 +81,7 @@ content > a:hover{
 /* ---------------------------------------------------
     works modal STYLE
 ----------------------------------------------------- */
-.row-setting {
-    height: 100%;
-}
+
 .card-setting {
     height: 450px;
 }
@@ -168,6 +166,10 @@ content > a:hover{
         display: block;
         width: 70%;
         margin: 10px auto;
+    }
+
+    .img-setting {
+        height: 61%;
     }
 }
 

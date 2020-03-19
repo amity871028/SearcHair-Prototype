@@ -1,0 +1,36 @@
+.Splitter{
+    min-height: 58px;
+}
+
+#content {
+    margin: 25px 30px;
+}
+
+.select-position {
+    display: flex;
+    margin-top: 5px;
+}
+
+.select-position #city {
+    margin: 0 5px 0 40px;
+}
+
+#remind-text {
+    margin: 20px 0;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    vertical-align: middle !important;
+}
+
+th, td {
+    padding: 20px !important;
+}
+
+table img {
+    width: 50px;
+}

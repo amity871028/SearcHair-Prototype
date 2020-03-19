@@ -78,7 +78,7 @@ tbody tr {
     width: 60px;
 }
 
-img {
+#preview-screen, #hair-condition img {
     width: 160px;
     position: relative;
     left: 70px;

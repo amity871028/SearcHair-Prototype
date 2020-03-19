@@ -1,10 +1,15 @@
-content > a,a:link,a:visited{
-    color: black !important;
-    text-decoration: none !important;
+#a {
+    position: absolute;
+    top: 127px;
+    left: 285px;
+    z-index: 10;
 }
-content > a:hover{
+
+#content > a:not(#store-photo),a:link:not(#store-photo),a:visited:not(#store-photo){
+    color: black;
+}
+#content > a:hover:not(#store-photo){
     color: black !important;
-    text-decoration: none;
 }
 
 .Splitter{
@@ -79,7 +84,12 @@ content > a:hover{
     vertical-align: top;
 }
 
-#user-photo {
+a #store-photo, a #store-photo:link, a #store-photo:visited {
+    
+    color: pink !important;
+}
+
+#user-edited-photo {
     height: 490px;
     position: absolute;
     right: 470px;
@@ -160,7 +170,7 @@ h4 {
         color: #7386D5;
     }
         
-    #user-photo {
+    #user-edited-photo {
         right: 0;
         left: 0;
         height: auto;
@@ -174,7 +184,7 @@ h4 {
 }
 
 @media only screen and (min-width: 574px) and (max-width: 873px){ 
-    #user-photo {
+    #user-edited-photo {
         left: 0px;
         right: 320px;
     }

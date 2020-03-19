@@ -14,22 +14,24 @@ function downloadIamge(selector, name) {
 
 
 function init(){
+    document.getElementById('dismiss').addEventListener('click', function(){
+        document.getElementById('sidebar').classList.remove('active');
+    });
+    document.getElementById('sidebarCollapse').addEventListener('click', function(){
+        document.getElementById('sidebar').classList.add('active');
+    });
+    var favorite_list = document.getElementsByClassName('favorite');
+    for(let i = 0; i < favorite_list.length; i++){
+        favorite_list[i].addEventListener('mouseover', function(){
+            this.src = "../static/img/favorite.png";
+        });
+        favorite_list[i].addEventListener('mouseout', function(){
+            this.src = "../static/img/favorite_undo.png";
+        });
+    }
+
     var store_btn = document.getElementById('store-photo');
     store_btn.addEventListener('click', downloadIamge(this, '../static/img/test_photo2.png'));
 }
 
 window.addEventListener('load', init);
-
-$(document).ready(function () {
-    $('#dismiss, .overlay').on('click', function () {
-        $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-    });
-
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').addClass('active');
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-    });
-});

@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #container {
+    position: fixed;
+    margin-top: 30px;
+    height: 70%;
+    filter:drop-shadow(3px 3px 3px rgba(0,0,0,.5));
+  }
+  .chatroom-content {
+    overflow: auto;
+    height: 90vmin;
+  }
+  #chatroom {
+    height: 100%;
+    background-color: #66e0ff;
+  }
+
+  span{
+      text-align: left !important;
+  }
